@@ -7,12 +7,12 @@ public class Character implements BaseCharacter {
     private float armour;
     private float attack;
 
-    public Character() {
-        health = 5;
-        strength = 5;
-        stamina = 5;
-        armour = 5;
-        attack = 5;
+    public Character(int[] stats) {
+        health = stats[0];
+        strength = stats[1];
+        stamina = stats[2];
+        armour = stats[3];
+        attack = stats[4];
     }
 
     @Override
@@ -22,12 +22,11 @@ public class Character implements BaseCharacter {
         System.out.println("Stamina: " + stamina);
         System.out.println("Armour: " + armour);
         System.out.println("Attack: " + attack);
-        System.out.println("\n");
     }
 
     @Override
     public void Attack() {
-        System.out.println("Throw fists!");
+        System.out.println("Throw fists! " + attack + " damage dealth!\n");
         
     }
 

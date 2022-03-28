@@ -9,12 +9,7 @@ public abstract class BaseEquipment implements BaseCharacter {
 
     @Override
     public void printStats() {
-        System.out.println("Health: " + character.getHealth());
-        System.out.println("Strength: " + character.getStrength());
-        System.out.println("Stamina: " + character.getStamina());
-        System.out.println("Armour: " + character.getArmour());
-        System.out.println("Attack: " + character.getAttack());
-        System.out.println("\n");
+        character.printStats();
     }
 
     @Override
